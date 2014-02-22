@@ -24,7 +24,6 @@ $array=mySQl_tools_get_data($sql);
 if($_COOKIE['UsernameHash']==$array[0] && $_SERVER["REMOTE_ADDR"]==$array[2])echo "Login succesfull<br />";
 else{
 	echo "<a href='../Permissions/login.php'>You're not logged in!<a><br />";
-	$curl_connection=curl_init('http://www.domainname.com/target_url.php');
 }
 
 //disconnect database connection

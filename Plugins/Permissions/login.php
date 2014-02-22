@@ -50,10 +50,10 @@ if($UsernameHash==$array[0] && $PasswordHash==$array[1]){
 	$sql="
 		UPDATE `Users`
 		SET `IP_Adress`='".$_SERVER['REMOTE_ADDR']."', 
-		`Last_Login`='2026', 
+		`Last_Login`='".time()."', 
 		`Login_Attempts`='12', 
 		`Login_Count`='3', 
-		`Logged_In_Until`='2076' 
+		`Logged_In_Until`='".time()."' 
 	";
 	mySQL_tools_execute($sql);
 }
