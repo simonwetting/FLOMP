@@ -6,6 +6,6 @@
 </head>
 
 <body>
-<a href="Plugins/CMS/index.php">cms</a>
+<a href="Plugins/CMS/index.php">CMS</a>
 </body>
 </html>
